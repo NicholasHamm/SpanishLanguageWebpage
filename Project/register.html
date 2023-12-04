@@ -1,0 +1,131 @@
+<!--      Nicholas Hamm - 19439854
+          Option 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FORIEGN LANGUAGE WEBSITE Register</title>
+  <meta charset="UTF-8" />
+  <meta name = "Learn Spanish" content = "Learning Spanish Course">
+    <link href="stylesheet.css" rel = "stylesheet"/>
+
+    <!-- Font link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <nav class = "navbar">
+    <div class = "content">
+      <div class = "logo">
+        <a href = "index.html">
+          <h1>Learn Spanish</h1>
+        </a>
+      </div>
+      <ul class = "menu-list">
+        <li><div class = "icon close">
+          <i class = "fa fa-close"></i>
+        </div></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class = "icon bars">
+          <i class = "fa fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class = "banner"></div>
+
+  <div class = "main">
+    <div class = "content">
+      <div class = "title"><h3>Register Now</h3></div>
+        
+    <div class = "reg-form">
+      <div class = "title">Registration Form</div>
+
+        <form class = "form" onsubmit = "Registered()">
+           <div class = "inputfield">
+              <label>First Name</label>
+              <input placeholder = "Firstname" type = "text" class = "input" name = "fname" required>
+           </div>  
+            <div class="inputfield">
+              <label>Last Name</label>
+              <input placeholder = "Surname" type = "text" class = "input" name = "sname" required>
+           </div>  
+            <div class = "inputfield">
+              <label>Course</label>
+              <div class = "option-select">
+                <select>
+                  <option value="op1">Option 1</option>
+                  <option value="op2">Option 2</option>
+                  <option value="op3">Option 3</option>
+                </select>
+              </div>
+           </div> 
+            <div class = "inputfield">
+              <label>Email Address</label>
+              <input placeholder = "E-mail" type = "email" class = "input" name = "email" required>
+           </div> 
+          <div class = "inputfield-check">
+              <label class = "check">
+                <input type = "checkbox" required>
+                <span class = "checkmark"></span>Agree to terms and conditions
+              </label>
+           </div>
+          <div class = "inputfield">
+            <input type = "submit" value = "Register" class = "btn">
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+    <footer>
+      <div class = "footer-content">
+        <h3>Learn Spanish</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis luctus egestas. Duis pretium a magna quis ultrices.</p>
+        <ul class = "social-links">
+          <li><a href = "https://www.facebook.com/"><i class = "fa fa-facebook"></i></a></li>
+          <li><a href = "https://twitter.com/"><i class = "fa fa-twitter"></i></a></li>
+          <li><a href = "https://www.linkedin.com/"><i class = "fa fa-linkedin-square"></i></a></li>
+        </ul>
+      </div>
+      <div class = "footer-bottom">copyright &copy;2021 me. designed by <i class = "fa fa-trash fa-1.5x"></i></div>
+    </footer>
+
+  <script>
+    function Registered(){
+      var fname = document.querySelector('input[name = "fname"]');
+      alert("Registration Completed.\nThanks for signing up " + fname.value + ".");
+    }
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const bars = document.querySelector(".bars");
+    const cross = document.querySelector(".close");
+
+    bars.onclick = ()=>{
+      menu.classList.add("active");
+      bars.classList.add("hide");
+      body.classList.add("disabledScroll");
+    }
+    cross.onclick = ()=>{
+      menu.classList.remove("active");
+      bars.classList.remove("hide");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 10 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
+    }
+
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,448 @@
+	/* Project Style Sheet 
+	   Foreign Language Webpage 
+
+	   Nicholas Hamm - 19439854
+	   Option 2
+
+		Colours
+		opal - #E16053
+		maroon - #642829
+		peach - #FFE4AE
+
+   */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cinzel Decorative', cursive;
+}
+h1{ 
+	font-size: 38px; 
+}
+h3{
+	font-weight: 800;
+	color: #642829;
+}
+h4{
+	color: #642829;
+	padding-bottom: 20px;
+}
+
+/* Home/All Page CSS */
+
+.content{
+	max-width: 1200px;
+	margin: auto;
+	padding: 5px 30px;
+}
+
+.navbar{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	padding: 30px 0;
+	transition: all 0.5s ease;
+}
+.navbar .content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar.scroll{
+	padding: 10px 0;
+	background: #642829;
+}
+.navbar .logo a{
+	color: #FFE4AE;
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+	text-shadow: 5px 2px #642829;
+}
+
+.navbar .menu-list{
+	display: inline-flex;
+}
+
+
+.menu-list li{
+	list-style: none;
+
+}
+.menu-list li a{
+	color: #FFE4AE;
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 14px;
+	text-decoration: none;
+	transition: all 2s ease;
+}
+.menu-list li a:hover{
+	color: #642829;
+	text-shadow: 0px -20px #FFE4AE;
+}
+
+.icon{
+	color: #FFE4AE;
+	font-size: 16px;
+	cursor: pointer;
+	display: none;
+}
+.icon.close{
+	position: absolute;
+	right: 28px;
+	top: 28px;
+}
+.icon.hide{
+	display: none;
+}
+.icon:hover{
+	color: #E16053;
+}
+.icon.bars:hover{
+	text-shadow: 0px 2px #642829;
+}
+
+.banner{
+	/*Image by <a href="https://unsplash.com/@baim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Baim Hanif</a> on <a href="https://unsplash.com/s/photos/graduation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+	height: 100vh;
+	background: url(img/banner.jpg) no-repeat;
+	color: #E16053;
+	background-blend-mode: screen; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.title{
+	text-align: center;	
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 36px;
+}
+
+.main{
+	padding: 36px 0;
+	background: #FFE4AE;
+}
+.main p{
+	padding-top: 20px;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+#intro{
+	text-align: center;
+}
+.world-map p {
+	text-decoration: none;
+	color: #642829;
+	font-size: 12px;
+	padding-top: 2px;
+}
+#spain-map{
+	padding-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+.culture-song{
+	height: 600px;
+	margin: 20px;
+	text-align: center;
+}
+
+footer{
+	background: #FFE4AE;
+	height: auto;
+	width: 100%;
+	padding-top: 50px;
+	color: #642829;
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+.footer-content p{
+	max-width: 50%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.social-links{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social-links li{
+	margin: 0 20px;
+}
+.social-links a{
+	text-decoration: none;
+	color: #642829;
+}
+.social-links a i{
+	font-size: 18px;
+	transition: color .4s ease;
+}
+.social-links a:hover i{
+	color: #E16053;
+}
+.footer-bottom{
+	background-color: #E16053;
+	width: 100%;
+	padding: 20px 0;
+}
+.footer-bottom {
+	font-size: 8px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* Register Page CSS */
+.reg-form{
+  	border-radius: 30px;
+	background: #642829;
+	padding: 40px;
+	color: #FFE4AE;
+}
+.reg-form .title{
+	font-size: 24px;
+	font-weight: 700;
+  	margin-bottom: 25px;
+}
+.reg-form .form{
+  	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.reg-form .form .inputfield{
+	margin-bottom: 15px;
+}
+.reg-form .form .inputfield label{
+   	margin-right: 10px;
+   	font-size: 16px;
+}
+.reg-form .form .inputfield input[type="text"], 
+.reg-form .form .inputfield input[type="email"]{
+	height: 25px;
+	resize: none;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	justify-content: center;
+	flex-direction: column;
+	resize: none;
+
+}
+.reg-form .form .inputfield-check:hover{
+	color: #E16053;
+}
+.reg-form .form .inputfield .btn{
+	margin-top: 20px;
+	background-color: #FFE4AE;
+	color: #642829;
+	cursor: pointer;
+	padding: 5px; 
+}
+.reg-form .form .inputfield .btn{
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 30px;
+	position: relative;
+	border: none;
+	transition: 0.5s;
+	box-shadow: 1px 6px #E16053;
+}
+.reg-form .form .inputfield .btn:hover {
+  	background-color: #802d25;
+  	color: #FFE4AE;
+}
+.reg-form .form .inputfield .btn:active {
+  	background-color: #E16053;
+  	box-shadow: 0 2px  #734041;
+  	transform: translateY(4px);
+}
+
+/* About CSS */
+.courses{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 10px;
+}
+.option{
+	background-color: #642829;
+	padding: 10px;
+	border-radius: 25px;
+	transition: transform 2s;
+	transition-timing-function: ease;
+}
+.course-img img{
+	width: 100%;
+	border-radius: 25px;
+	margin: auto;
+}
+.option-info{
+	text-align: center;
+	color: #FFE4AE;
+	padding-bottom: 10px;
+}
+#op1 img{
+	margin-top: 15px;
+}
+#op1:hover{
+	transform: rotateY(360deg);
+}
+#op2:hover{
+	transform: rotateY(360deg);
+}
+#op3:hover{
+	transform: rotateY(360deg);
+}
+
+.teachers{
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+}
+.option-teacher{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background-color: #FFE4AE;
+	padding: 10px;
+	border-radius: 25px;
+	transition: transform 2s;
+	transition-timing-function: ease;
+}
+.option-teacher:hover{
+	background-color: #642829;
+}
+#teac4:hover, #teac5:hover{
+	background-color: #E16053;
+}
+.teacher-img{
+	margin: auto;
+}
+.teacher-img img{
+	max-width: 100%;
+	border-radius: 25px;
+}
+.teacher-info{
+	text-align: center;
+	color: #FFE4AE;
+}
+.teacher-info p{
+	margin: auto;
+	padding: 10px;
+
+}
+
+/* Contact CSS*/
+.address{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 26px;
+	font-weight: 800;
+	color: #E16053;
+}
+.address b {
+	font-size: 20px;
+	color: #642829;
+}
+.google-maps {
+	height: 600px;
+	margin-bottom: 30px;
+}
+iframe{
+	margin: 0;
+	border: 10px solid #E16053;
+	height: 100%;
+	width: 100%;
+}
+.media-contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #E16053;
+	padding-bottom: 30px;
+}
+.media-contact p{
+	font-size: 26px;
+	color: #E16053;
+	text-align: center;
+	font-weight: 900;
+
+}
+.media-contact a{
+	text-decoration: none;
+	color: #642829;
+	font-size: 50px;
+	margin-left: 20px;
+}
+.media-contact a i{
+	transition: color .4s ease;
+}
+.media-contact a:hover i{
+	color: #E16053;
+	font-size: 80px;
+}
+.media-contact div{
+	border-bottom: 1px solid #E16053;
+	color: #642829;
+	font-size: 50px;
+	font-weight: 900;
+}
+@media (max-width: 868px){
+
+	/* Home/All Page CSS */
+
+	body.disabledScroll{
+		overflow: hidden;
+	}
+	.navbar .menu-list{
+		position: fixed;
+		top: 0;
+		right: -100%;
+		height: 100vh;
+		width: 100%;
+		max-width: 400px;
+		background: #642829;
+		display: block;
+		padding: 36px 0;
+		text-align: center;
+		transition: all 0.5s ease;
+	}
+	.navbar .menu-list.active{
+		right: 0%;
+	}
+	.navbar .menu-list li{
+		margin-top: 56px; 
+	}
+	.navbar .menu-list li a{
+		font-size: 28px; 
+	}
+	.icon{
+		display: block;
+	}
+
+	/* About CSS */
+
+	.option-teacher{
+		display: flex;
+		flex-direction: column;
+	}
+}
